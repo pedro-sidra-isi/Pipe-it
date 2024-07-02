@@ -1,9 +1,20 @@
-[build-system]
-# AVOID CHANGING REQUIRES: IT WILL BE UPDATED BY PYSCAFFOLD!
-requires = ["setuptools>=46.1.0", "setuptools_scm[toml]>=5"]
-build-backend = "setuptools.build_meta"
+[tool.poetry]
+name = "pipe-it"
+version = "0.1.0"
+description = "Write your pipeline in .yaml syntax and run it! The framework uses python but supports any command-line commands"
+authors = ["Pedro Sidra de Freitas <pedro.sidra@senairs.org.br>"]
+license = "MIT"
+readme = "README.rst"
 
-[tool.setuptools_scm]
-# For smarter version schemes and other configuration options,
-# check out https://github.com/pypa/setuptools_scm
-version_scheme = "no-guess-dev"
+[tool.poetry.dependencies]
+python = ">=3.9"
+hydra-core = "^1.3.2"
+munch = "^4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+pre-commit = "^3.7.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

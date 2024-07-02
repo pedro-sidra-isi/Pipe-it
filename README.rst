@@ -34,10 +34,7 @@ pipe-it
 =======
 
 
-    Add a short description here!
-
-
-A longer description of your project goes here...
+    Write your pipeline in .yaml syntax and run it! The framework uses python but supports any command-line commands
 
 
 .. _pyscaffold-notes:
